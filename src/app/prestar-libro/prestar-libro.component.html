@@ -1,0 +1,22 @@
+<h3>LIBROS PRESTADOS</h3>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Prestado</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of librosPrestados">
+            <td>{{item.name}}</td>
+            <td>{{item.author}}</td>
+            <td>{{item.gender}}</td>
+            <td>{{item.lended}}></td>
+        </tr>
+    </tbody>
+</table>
+

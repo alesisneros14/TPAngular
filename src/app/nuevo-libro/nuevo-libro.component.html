@@ -1,0 +1,27 @@
+<div class="jumbotron">
+
+    <h3>CARGAR NUEVO LIBRO</h3>
+
+    <form (ngSubmit)="agregarLibro()">
+
+        
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" [(ngModel)]="name">
+        
+        
+        <label for="author">Autor</label>
+        <input type="text" name="author" id="author" [(ngModel)]="author">
+        
+        
+        <label for="gender">Genero</label>
+        <select name="gender" [(ngModel)]="gender">
+            <option *ngFor="let _gender of genders" [value]="_gender.id">{{gender.name}}</option>
+        </select>
+    
+        
+        <button type="submit" class="btn btn-primary">Agregar</button>
+            
+
+    </form>
+</div>
+

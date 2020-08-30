@@ -1,0 +1,26 @@
+h3{
+    text-align: center;
+    color: rgb(6, 103, 214);
+    margin-bottom: 30px;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input{
+    margin-right: 20px;
+}
+
+button{
+    margin-left: 30px;
+}
+
+form{
+    text-align: center;
+}
+
+.jumbotron{
+    background-color: rgb(212, 251, 255);
+
+}

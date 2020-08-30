@@ -1,0 +1,25 @@
+<div>
+    <h3>LIBROS DISPONIBLES</h3>
+
+    <table (ngSubmit)="prestarLibro()" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Prestado</th>
+                <th></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of libros">
+                <td id="nombre">{{item.name}}</td>
+                <td id="autor">{{item.author}}</td>
+                <td id="genero">{{item.gender}}</td>
+                <td><input type="text" id="prestado"></td>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
